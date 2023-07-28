@@ -1,4 +1,4 @@
-# template-vite-js-tailwind-v3
+# Basado en template-vite-js-tailwind-v3
 
 - **template of:** vite + vanilaJS
 - **tailwindcss:** v3.x
