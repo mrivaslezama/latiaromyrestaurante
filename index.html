@@ -8,144 +8,333 @@
     <title>La Tia Romy |Restaurante|</title>
   </head>
   <body class="bg-black">
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100"
-    >
-      <!-- Jumbotron -->
-      <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-          <h1
-            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
-          >
-            La Tia Romy
-          </h1>
-          <p
-            class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400"
-          >
-            Restaurante
-          </p>
-          <h3 class="my-4 text-2xl font-bold text-gray-500">
-            Excelentes platos nacionales e internacionales, comida de casa!.
-            Estamos ubicados en pasaje corazón de Jesus 4015, sector el Milagro.
-            La Serena.
-          </h3>
-          <div
-            class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
-          >
-            <a
-              href="https://goo.gl/maps/1RDiQuJszwsxtCra8"
-              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-            >
-              Como llegar!
-              <svg
-                class="w-3.5 h-3.5 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://wa.me/c/56931751969"
-              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              Contactanos
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Gallery -->
-    <div class="m-8 p-8">
-      <h1
-        class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+    <!--Navbar-->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        Nuestros platos más demandados
-      </h1>
+        <a href="/" class="flex items-center">
+          <img
+            src="/src/assets/LOGO1.png"
+            class="h-8 mr-3"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >La Tia Romy</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="menu"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Menú</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/restauranttiaromy/?hl=es"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://goo.gl/maps/1RDiQuJszwsxtCra8"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Dirección</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/c/56931751969"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="bg-top bg-no-repeat bg-[url('/src/assets/chuleton.jpg')] bg-gray-700 bg-blend-multiply"
+    >
+      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1
+          class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+        >
+          Bienvenidos
+        </h1>
+        <p
+          class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+        >
+          Presentamos lo mejor de la comida nacional e internacional, innovamos
+          en un entorno agradable, para disfrutar con amigos y familiares.
+        </p>
+        <h3 class="my-4 text-2xl font-bold text-gray-500">
+          Excelentes platos nacionales e internacionales, comida de casa!.
+          Estamos ubicados en pasaje corazón de Jesus 4015, sector el Milagro.
+          La Serena.
+        </h3>
+
+        <div
+          class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+        >
+          <a
+            href="https://goo.gl/maps/1RDiQuJszwsxtCra8"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Dirección
+            <svg
+              class="w-3.5 h-3.5 ml-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/c/56931751969"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+          >
+            Contactanos!
+          </a>
+        </div>
+      </div>
+      <!-- Gallery -->
+      <div class="m-8 p-8">
+        <h2
+          class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+        >
+          Nuestros platos ...
+        </h2>
+      </div>
+      <!--SectionCard-->
 
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="./src/assets/pabellon-removebg-preview.png"
+            src="src/assets/carneVino.jpg"
             alt=""
           />
         </div>
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="./src/assets/chuleta.png"
+            src="src/assets/completa2.jpg"
             alt=""
           />
         </div>
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="./src/assets/reineta-removebg-preview.png"
+            src="src/assets/completo.jpg"
             alt=""
           />
         </div>
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="./src/assets/combo2-removebg-preview.png"
+            src="src/assets/reineta-removebg-preview.png"
             alt=""
           />
         </div>
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="./src/assets/LOGO2.png"
+            src="src/assets/pabell2.jpg"
             alt=""
           />
         </div>
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="./src/assets/LOGO1.png"
+            src="src/assets/milanesa.jpg"
             alt=""
           />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="src/assets/sopa.png"
+            alt=""
+          />
+        </div>
+        <!--CardPresent-->
+        <div>
+          <a
+            href="#"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+              src="/docs/images/blog/image-4.jpg"
+              alt=""
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+            </div>
+          </a>
         </div>
       </div>
-    </div>
+      <!--CardPresentEnd-->
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="src/assets/reineton.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="src/assets/LOGO1.png"
+          alt=""
+        />
+      </div>
 
-    <script type="module" src="./src/main.js"></script>
-    <div
-      class="relative flex min-h-screen flex-col justify-center overflow-hidden"
-    >
-      <img
-        src="/img/beams.jpg"
-        alt=""
-        class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
-        width="1308"
-      />
+      <script type="module" src="./src/main.js"></script>
 
       <div
-        class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
-      ></div>
-      <div
-        class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10"
+        class="relative flex min-h-screen flex-col justify-center overflow-hidden"
       >
+        <img
+          src="/img/beams.jpg"
+          alt=""
+          class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
+          width="1308"
+        />
+
+        <div
+          class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
+        ></div>
+        <div
+          class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10"
+        >
+          <div class="mx-auto max-w-md">
+            <img
+              src="./src/assets/LOGO1.png"
+              class="border-8-black h-60 rounded-lg"
+              alt="La Tia Romy"
+            />
+            <h3 class="my-4 text-2xl font-bold text-gray-500">La Tia Romy!</h3>
+            <div class="divide-y divide-gray-300/50">
+              <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
+                <p>Diariamente ofrecemos tres menus diferentes:</p>
+                <ul class="space-y-4">
+                  <li class="flex items-center">
+                    <svg
+                      class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="11" />
+                      <path
+                        d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                        fill="none"
+                      />
+                    </svg>
+                    <p class="ml-4">
+                      Carne de vacuno, cerdo, pollo o pescado,
+                      <code class="text-sm font-bold text-gray-900"
+                        >sujeto a disponibilidad</code
+                      >
+                    </p>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="11" />
+                      <path
+                        d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                        fill="none"
+                      />
+                    </svg>
+                    <p class="ml-4">
+                      El cliente puede elegir dos agregados, entre:
+                      <code class="text-sm font-bold text-gray-900"
+                        >arroz, ensalada, papas fritas o pure de papas</code
+                      >
+                    </p>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="11" />
+                      <path
+                        d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                        fill="none"
+                      />
+                    </svg>
+                    <p class="ml-4">Los almuerzos incluyen sopa y postre</p>
+                  </li>
+                </ul>
+                <p>
+                  Disponemos de un hermoso local, acogedor y tranquilo para
+                  disfrutar de un delicioso almuerzo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="mx-auto max-w-md">
-          <img
-            src="./src/assets/LOGO1.png"
-            class="border-8-black h-60 rounded-lg"
-            alt="La Tia Romy"
-          />
-          <h3 class="my-4 text-2xl font-bold text-gray-500">La Tia Romy!</h3>
+          <img src="/img/logo.svg" class="h-6" alt="La Tia Romy" />
           <div class="divide-y divide-gray-300/50">
             <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
-              <p>Diariamente ofrecemos tres menus diferentes:</p>
+              <p>Entre nuestros platos destacan:</p>
               <ul class="space-y-4">
                 <li class="flex items-center">
                   <svg
@@ -159,12 +348,7 @@
                       fill="none"
                     />
                   </svg>
-                  <p class="ml-4">
-                    Carne de vacuno, cerdo, pollo o pescado,
-                    <code class="text-sm font-bold text-gray-900"
-                      >sujeto a disponibilidad</code
-                    >
-                  </p>
+                  <p class="ml-4">Suprema de pollo</p>
                 </li>
                 <li class="flex items-center">
                   <svg
@@ -178,12 +362,7 @@
                       fill="none"
                     />
                   </svg>
-                  <p class="ml-4">
-                    El cliente puede elegir dos agregados, entre:
-                    <code class="text-sm font-bold text-gray-900"
-                      >arroz, ensalada, papas fritas o pure de papas</code
-                    >
-                  </p>
+                  <p class="ml-4">Lomo de cerdo salteado</p>
                 </li>
                 <li class="flex items-center">
                   <svg
@@ -197,170 +376,103 @@
                       fill="none"
                     />
                   </svg>
-                  <p class="ml-4">Los almuerzos incluyen sopa y postre</p>
+                  <p class="ml-4">Carne al vino</p>
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">Reineta apanada o a la plancha</p>
+                </li>
+
+                <li class="flex items-center">
+                  <svg
+                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">Chuleta a la cerveza</p>
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">Pastel de papas con pollo o boloñesa</p>
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">Lasaña boloñesa</p>
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">Carne al vino</p>
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">Cordon Bleu de pollo</p>
                 </li>
               </ul>
               <p>
-                Disponemos de un hermoso local, acogedor y tranquilo para
-                disfrutar de un delicioso almuerzo.
+                Trabajamos principalmente con ingredientes naturales, producidos
+                localmente para garantizar la mejor frescura y calidad a nuestra
+                distinguida clientela.
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="mx-auto max-w-md">
-        <img src="/img/logo.svg" class="h-6" alt="La Tia Romy" />
-        <div class="divide-y divide-gray-300/50">
-          <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
-            <p>Entre nuestros platos destacan:</p>
-            <ul class="space-y-4">
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Suprema de pollo</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Lomo de cerdo salteado</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Carne al vino</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Reineta apanada o a la plancha</p>
-              </li>
-
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Chuleta a la cerveza</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Pastel de papas con pollo o boloñesa</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Lasaña boloñesa</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Carne al vino</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p class="ml-4">Cordon Bleu de pollo</p>
-              </li>
-            </ul>
-            <p>
-              Trabajamos principalmente con ingredientes naturales, producidos
-              localmente para garantizar la mejor frescura y calidad a nuestra
-              distinguida clientela.
-            </p>
-          </div>
-          <div class="pt-8 text-base font-semibold leading-7">
-            <p class="text-gray-900">Want to dig deeper into Tailwind?</p>
-            <p>
-              <a
-                href="https://www.instagram.com/latia_romy._/?hl=es"
-                class="text-sky-500 hover:text-sky-600"
-                >Read the docs &rarr;</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
