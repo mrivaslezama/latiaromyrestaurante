@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>La Tia Romy |Restaurante|</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400&display=swap");
+
+      @tailwind base;
+    </style>
+    <!--Endsfonts-->
   </head>
   <body class="bg-black">
     <!--Navbar-->
@@ -16,7 +30,7 @@
         <a href="/" class="flex items-center">
           <img src="src/assets/LOGO1.png" class="h-8 mr-3" alt="La Tia Romy" />
           <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-2xl font-semibold font-sans whitespace-nowrap dark:text-white"
             >La Tia Romy</span
           >
         </a>
@@ -86,7 +100,7 @@
     >
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1
-          class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          class="tracking-tight mb-4 text-4xl font-extrabold leading-none text-white md:text-5xl lg:text-6xl"
         >
           Bienvenidos
         </h1>
@@ -329,25 +343,50 @@
       <!--EndCard-->
       <br />
 
-      <div>
-        <img
-          class="bg-no-repeat bg-center rounded-lg"
-          src="src/assets/pabell2.jpg"
-          alt=""
-        />
-        <li class="flex items-center">
-          <svg
-            class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="12" cy="12" r="11" />
-            <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-          </svg>
-          <p class="ml-4">Especial pabellon criollo</p>
-        </li>
+      <!--Card-->
+      <div
+        class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+      >
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img
+              class="h-48 w-full object-cover md:h-full md:w-48"
+              src="src/assets/pabell2.jpg"
+              alt="Completos"
+            />
+          </div>
+          <div class="p-8">
+            <div
+              class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+            >
+              Platos especiales
+            </div>
+            <li class="flex items-center">
+              <svg
+                class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="11" />
+                <path
+                  d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                  fill="none"
+                />
+              </svg>
+              <p class="ml-4">Pabellon Criollo</p>
+            </li>
+            <a
+              href="#"
+              class="block mt-1 text-lg text-slate-600 leading-tight font-medium text-black hover:underline"
+              >Carne mechada, arroz, porotos negros, tajadas (platano frito),
+              queso llanero y huevo frito</a
+            >
+          </div>
+        </div>
       </div>
 
+      <!--EndCard-->
+      <br />
       <!--Card-->
       <div
         class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
